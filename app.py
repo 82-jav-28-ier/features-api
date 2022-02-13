@@ -7,8 +7,8 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 LOCAL_BASE_PATH = getenv('BASE_PATH')
-REMOTE_TRAINED_PATH = getenv('REMOTE_TRAINED_PATH','processed_data/trained_model.parquet')
-BUCKET_STORAGE = getenv('REMOTE_TRAINED_PATH','kueski-test-storage')
+REMOTE_TRAINED_PATH = getenv('REMOTE_TRAINED_PATH')
+BUCKET_STORAGE = getenv('BUCKET_STORAGE')
 LOCAL_PATH = path.join(LOCAL_BASE_PATH,
                           'trained_model.parquet')
 
